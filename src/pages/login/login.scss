@@ -1,0 +1,27 @@
+page-login {
+
+  ion-content {
+
+    background-image: url('../assets/imgs/login-page-background.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+    h1[margined] {
+      margin-top: 6rem!important;
+      margin-bottom: 6rem!important;
+    }
+
+    #language {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    #language[lang="en"] {
+      background-image: url('../assets/imgs/lang/en.png');
+    }
+
+  }
+
+}
