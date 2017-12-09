@@ -48,6 +48,18 @@
 
 }
 
+.row[no-side-padding]>.col {
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+}
+
 .bar-button {
   text-transform: none;
   color: color($colors, primary);
