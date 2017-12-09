@@ -5,23 +5,31 @@ import { MyApp } from './app.component';
 
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
+import { SearchPage } from '../pages/search/search';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { CalendarModule } from 'ion2-calendar';
 
 @NgModule({
   declarations: [
     MyApp,
     LoginPage,
+    TabsPage,
+    SearchPage,
   ],
   imports: [
     BrowserModule,
+    CalendarModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     LoginPage,
+    TabsPage,
+    SearchPage,
   ],
   providers: [
     StatusBar,
