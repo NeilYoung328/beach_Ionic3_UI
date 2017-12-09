@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SearchPage } from '../pages/search/search';
+import { CalendarPopoverPage } from '../pages/search/calendar-popover/calendar-popover';
 import { CartPage } from '../pages/cart/cart';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -19,6 +20,7 @@ import { CalendarModule } from 'ion2-calendar';
     LoginPage,
     TabsPage,
     SearchPage,
+    CalendarPopoverPage,
     CartPage,
   ],
   imports: [
@@ -32,6 +34,7 @@ import { CalendarModule } from 'ion2-calendar';
     LoginPage,
     TabsPage,
     SearchPage,
+    CalendarPopoverPage,
     CartPage,
   ],
   providers: [

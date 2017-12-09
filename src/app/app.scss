@@ -111,6 +111,14 @@ h1 {
   background-image: none;
 }
 
+ion-popover {
+
+  ion-backdrop {
+    opacity: .5;
+  }
+
+}
+
 .or {
   height: 3rem;
   width: 100%;

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, App, NavParams, ModalController } from 'ionic-angular';
-import { CalendarModal, CalendarModalOptions, DayConfig, CalendarResult } from 'ion2-calendar';
+import { IonicPage, NavController, PopoverController, App, NavParams } from 'ionic-angular';
 
+import { CalendarPopoverPage } from './calendar-popover/calendar-popover';
 import { LoginPage } from '../login/login';
 
 /**
@@ -21,12 +21,13 @@ export class SearchPage {
   constructor(
     public navCtrl: NavController,
     public appCtrl: App,
+    public popoverCtrl: PopoverController,
     public navParams: NavParams,
-    public modalCtrl: ModalController,
   ) { }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SearchPage');
+  presentCalendar() {
+    let popover = this.popoverCtrl.create(CalendarPopoverPage)
+    popover.present()
   }
 
   goBack() {
