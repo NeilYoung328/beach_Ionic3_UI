@@ -5,6 +5,34 @@
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 400;
+  src: url($font-path + "/ProximaNova_Regular.otf") format("opentype");
+};
+
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 600;
+  src: url($font-path + "/ProximaNova_Semibold.otf") format("opentype");
+};
+
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 700;
+  src: url($font-path + "/ProximaNova_Bold.otf") format("opentype");
+};
+
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 800;
+  src: url($font-path + "/ProximaNova_Extrabold.otf") format("opentype");
+};
+
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -41,6 +69,9 @@ $colors: (
   dark:       #222
 );
 
+$font-family-base: "ProximaNova";
+$h1-font-size: 3rem;
+$h3-font-size: 1.6rem;
 
 // App iOS Variables
 // --------------------------------------------------
