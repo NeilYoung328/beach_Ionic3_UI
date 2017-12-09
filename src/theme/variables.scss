@@ -62,30 +62,56 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #fe5295,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  text:       #000,
+  grey:       #999,
 );
 
 $font-family-base: "ProximaNova";
 $h1-font-size: 3rem;
 $h3-font-size: 1.6rem;
+$toolbar-background: #fff;
+$toolbar-border-color: #eee;
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
+$font-family-ios-base: $font-family-base;
 
+$list-ios-background-color: transparent;
+$list-inset-ios-border-radius: 0;
 
+$label-ios-text-color: color($colors, text);
+$label-ios-text-color-focused: color($colors, primary);
+
+$button-ios-font-size: 2rem;
+
+$button-ios-text-transform: none;
+
+$tabs-ios-tab-min-height: 6rem;
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
+$font-family-md-base: $font-family-base;
 
+$list-md-background-color: transparent;
+$list-inset-md-border-radius: 0;
 
+$label-md-text-color: color($colors, text);
+$label-md-text-color-focused: color($colors, primary);
+
+$button-md-font-size: 2rem;
+
+$button-md-text-transform: none;
+
+$tabs-md-tab-icon-size: 3rem;
 
 // App Windows Variables
 // --------------------------------------------------
@@ -107,7 +133,7 @@ $h3-font-size: 1.6rem;
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
-// http://ionicframework.com/docs/ionicons/
+// http://ionicframework.com /docs/ionicons/
 
 @import "ionic.ionicons";
 
