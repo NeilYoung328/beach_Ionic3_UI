@@ -59,25 +59,25 @@
 
     <ion-row no-side-padding (click)="presentCalendar()">
 
-      <ion-col>
+      <ion-col col-5>
         <ion-item>
           <ion-label stacked text-capitalize color="primary">Start date</ion-label>
-          <ion-input type="text" placeholder="01/01/2017"></ion-input>
+          <ion-input readonly type="text" placeholder="01/01/2017" [(ngModel)]="date.from"></ion-input>
         </ion-item>
       </ion-col>
 
-      <ion-col>
+      <ion-col col-5 offset-2>
         <ion-item>
           <ion-label stacked text-capitalize color="primary">End date</ion-label>
-          <ion-input type="text" placeholder="01/01/2017"></ion-input>
+          <ion-input readonly type="text" placeholder="01/01/2017" [(ngModel)]="date.to"></ion-input>
         </ion-item>
       </ion-col>
 
     </ion-row>
 
-    <ion-label text-small text-center no-top-margin>within 0 days period</ion-label>
+    <ion-label text-small text-center no-top-margin>within {{date.period}} days period</ion-label>
 
-    <button ion-button round full pink-gradient (click)="doLogin()">Next</button>
+    <button ion-button round full pink-gradient (click)="next()">Next</button>
 
   </ion-list>
 

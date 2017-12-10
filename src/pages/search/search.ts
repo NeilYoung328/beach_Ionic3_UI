@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, PopoverController, App, NavParams } from 'ionic-angular';
+import { Component } from '@angular/core'
+import { IonicPage, NavController, PopoverController, App, NavParams } from 'ionic-angular'
+import * as moment from 'moment'
 
-import { CalendarPopoverPage } from './calendar-popover/calendar-popover';
-import { LoginPage } from '../login/login';
+import { CalendarPopoverPage } from './calendar-popover/calendar-popover'
+import { LoginPage } from '../login/login'
+import { SearchDetailsPage } from '../search-details/search-details'
 
 /**
  * Generated class for the SearchPage page.
@@ -18,6 +20,8 @@ import { LoginPage } from '../login/login';
 })
 export class SearchPage {
 
+  public date = { from: '', to: '', period: 0 }
+
   constructor(
     public navCtrl: NavController,
     public appCtrl: App,
@@ -28,6 +32,13 @@ export class SearchPage {
   presentCalendar() {
     let popover = this.popoverCtrl.create(CalendarPopoverPage)
     popover.present()
+    popover.onDidDismiss((date: { from: moment.Moment; to: moment.Moment }) => {
+      if (date) {
+        this.date.from = date.from.format('DD/MM/YYYY')
+        this.date.to = date.to.format('DD/MM/YYYY')
+        this.date.period = date.to.diff(date.from, 'days') + 1
+      }
+    })
   }
 
   goBack() {
@@ -36,6 +47,10 @@ export class SearchPage {
     } else {
       this.appCtrl.getRootNav().push(LoginPage, {}, { direction: 'back' })
     }
+  }
+
+  next() {
+    this.navCtrl.push(SearchDetailsPage)
   }
 
 }

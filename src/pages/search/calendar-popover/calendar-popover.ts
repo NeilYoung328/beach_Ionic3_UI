@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ViewController } from 'ionic-angular';
 import { CalendarComponentOptions } from 'ion2-calendar';
 
 /**
@@ -14,13 +15,15 @@ import { CalendarComponentOptions } from 'ion2-calendar';
 })
 export class CalendarPopoverPage {
 
-  dateRange: { from: string, to: string }
+  dateRange: { from: '', to: '' }
   optionsRange: CalendarComponentOptions = {
     pickMode: 'range'
   }
-  type: 'string'
-  format: 'DD/MM/YYYY'
 
-  constructor() { }
+  doClose() {
+    this.viewCtrl.dismiss(this.dateRange)
+  }
+
+  constructor(public viewCtrl: ViewController) { }
 
 }
