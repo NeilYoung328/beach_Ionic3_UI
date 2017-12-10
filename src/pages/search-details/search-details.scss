@@ -1,3 +1,25 @@
 page-search-details {
 
+  .vertical-buttons {
+    .item {
+      margin: 0;
+      .item-inner {
+        padding: 5px!important;
+      }
+      .label {
+        margin: 0;
+        border-radius: 10px;
+      }
+      .button {
+        height: 3.6rem!important;
+        margin: 0;
+
+        &[selected] {
+          background: linear-gradient(to right, #fe5295, #f86d67);
+          color: #fff;
+        }
+      }
+    }
+  }
+
 }

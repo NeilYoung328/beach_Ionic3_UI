@@ -65,7 +65,7 @@ $colors: (
   primary:    #fe5295,
   secondary:  #32db64,
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #dedede,
   dark:       #222,
   text:       #000,
   grey:       #999,
@@ -85,6 +85,7 @@ $font-family-ios-base: $font-family-base;
 
 $list-ios-background-color: transparent;
 $list-inset-ios-border-radius: 0;
+$list-ios-margin-bottom: 16px;
 
 $label-ios-text-color: color($colors, text);
 $label-ios-text-color-focused: color($colors, primary);
@@ -106,6 +107,7 @@ $font-family-md-base: $font-family-base;
 
 $list-md-background-color: transparent;
 $list-inset-md-border-radius: 0;
+$list-md-margin-bottom: 16px;
 
 $label-md-text-color: color($colors, text);
 $label-md-text-color-focused: color($colors, primary);

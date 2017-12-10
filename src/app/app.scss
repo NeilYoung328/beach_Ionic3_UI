@@ -19,6 +19,29 @@
   background: linear-gradient(to right, #fe5295, #f86d67);
 }
 
+.button[check] {
+
+  color: #000;
+  text-transform: uppercase;
+
+  .icon {
+    height: 3rem;
+    width: 3rem;
+    background-color: color($colors, light);
+    border-radius: 5px;
+    margin-right: 1rem;
+  }
+
+  &[checked] {
+
+    color: color($colors, primary);
+    .icon {
+      background: linear-gradient(to right, #fe5295, #f86d67);
+    }
+
+  }
+}
+
 .item.item-input[rounded-input],
 .item.item-input.input[rounded-input] {
 
@@ -70,17 +93,18 @@
 }
 
 ion-list {
-  button {
-    height: 5rem!important;
-  }
   .item {
     padding-left: 0;
   }
 }
 
-.list[margined] {
-  margin-left: 20%;
-  margin-right: 20%;
+.button.button-default {
+  height: 5rem;
+}
+
+*[margined] {
+  margin-left: 20%!important;
+  margin-right: 20%!important;
 }
 
 *[no-top-margin] {
@@ -97,6 +121,13 @@ ion-app.ios {
   }
 }
 
+ion-app.md {
+  .button {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+}
+
 h1,
 h2 {
   color: color($colors, primary);
@@ -104,6 +135,10 @@ h2 {
 
 h1 {
   font-weight: bold;
+}
+
+.item h3 {
+  font-size: 1.6rem;
 }
 
 *[text-small] {
