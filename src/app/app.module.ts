@@ -7,6 +7,7 @@ import { LoginPage } from '../pages/login/login'
 import { TabsPage } from '../pages/tabs/tabs'
 import { SearchPage } from '../pages/search/search'
 import { SearchDetailsPage } from '../pages/search-details/search-details'
+import { SearchResultsPage } from '../pages/search-results/search-results'
 import { CalendarPopoverPage } from '../pages/search/calendar-popover/calendar-popover'
 import { CartPage } from '../pages/cart/cart'
 
@@ -22,6 +23,7 @@ import { CalendarModule } from 'ion2-calendar'
     TabsPage,
     SearchPage,
     SearchDetailsPage,
+    SearchResultsPage,
     CalendarPopoverPage,
     CartPage,
   ],
@@ -37,6 +39,7 @@ import { CalendarModule } from 'ion2-calendar'
     TabsPage,
     SearchPage,
     SearchDetailsPage,
+    SearchResultsPage,
     CalendarPopoverPage,
     CartPage,
   ],
