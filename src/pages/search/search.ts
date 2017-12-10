@@ -1,5 +1,5 @@
-import { Component } from '@angular/core'
-import { IonicPage, NavController, PopoverController, App, NavParams } from 'ionic-angular'
+import { Component, ViewChild } from '@angular/core'
+import { IonicPage, NavController, Navbar, PopoverController, App, NavParams } from 'ionic-angular'
 import * as moment from 'moment'
 
 import { CalendarPopoverPage } from './calendar-popover/calendar-popover'
@@ -19,6 +19,7 @@ import { SearchDetailsPage } from '../search-details/search-details'
   templateUrl: 'search.html',
 })
 export class SearchPage {
+  @ViewChild(Navbar) navBar: Navbar
 
   public date = { from: '', to: '', period: 0 }
 
@@ -28,6 +29,12 @@ export class SearchPage {
     public popoverCtrl: PopoverController,
     public navParams: NavParams,
   ) { }
+
+  ionViewDidLoad() {
+    this.navBar.backButtonClick = (e:UIEvent) => {
+      this.goBack()
+    }
+  }
 
   presentCalendar() {
     let popover = this.popoverCtrl.create(CalendarPopoverPage)
