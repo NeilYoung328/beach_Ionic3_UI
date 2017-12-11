@@ -30,7 +30,7 @@ export class SearchResultsPage {
       reviews: 22,
       rating: 5,
       img: '../assets/imgs/beaches/beach2.png',
-      options: ['cash', 'tea', 'food', 'shower', 'wifi', 'computer'],
+      options: ['cash', 'bar', 'food', 'shower', 'wifi', 'music'],
     },
     {
       title: 'Ammos Beach',
@@ -41,7 +41,7 @@ export class SearchResultsPage {
       reviews: 12,
       rating: 3,
       img: '../assets/imgs/beaches/beach1.png',
-      options: ['cash', 'credit', 'tea', 'food', 'shower', 'wifi', 'computer'],
+      options: ['cash', 'credit', 'bar', 'food', 'shower', 'wifi', 'music'],
     },
     {
       title: 'Crazy Beach',
@@ -52,7 +52,7 @@ export class SearchResultsPage {
       reviews: 22,
       rating: 1,
       img: '../assets/imgs/beaches/beach2.png',
-      options: ['cash', 'credit', 'tea', 'wifi', 'computer'],
+      options: ['cash', 'credit', 'bar', 'wifi', 'music'],
     },
     {
       title: 'Ammos Beach',
@@ -63,7 +63,7 @@ export class SearchResultsPage {
       reviews: 12,
       rating: 5,
       img: '../assets/imgs/beaches/beach1.png',
-      options: ['cash', 'credit', 'tea', 'food'],
+      options: ['cash', 'credit', 'bar', 'food'],
     },
     {
       title: 'Crazy Beach',
@@ -74,7 +74,7 @@ export class SearchResultsPage {
       reviews: 22,
       rating: 2,
       img: '../assets/imgs/beaches/beach2.png',
-      options: ['cash', 'shower', 'wifi', 'computer'],
+      options: ['cash', 'shower', 'wifi', 'music'],
     },
   ]
 
