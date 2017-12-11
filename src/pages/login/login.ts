@@ -10,15 +10,10 @@ import { TabsPage } from '../tabs/tabs';
 export class LoginPage {
 
   PICTURE_RATIO = 1659/1200
-  currentLanguage: any
+  currentLanguage: string = 'en'
   shouldTop = document.body.clientHeight - document.body.clientWidth * this.PICTURE_RATIO + 'px'
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.currentLanguage = 'en'
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
   }
 
   //TODO: Implement auth
