@@ -6,13 +6,6 @@ import { CalendarPopoverPage } from './calendar-popover/calendar-popover'
 import { LoginPage } from '../login/login'
 import { SearchDetailsPage } from '../search-details/search-details'
 
-/**
- * Generated class for the SearchPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-search',
