@@ -1,12 +1,65 @@
-<ion-header>
+<ion-header class="has-shadow">
 
   <ion-navbar>
-    <ion-title>cart</ion-title>
+    <ion-title>Your Cart</ion-title>
+    <ion-buttons right>
+      <button ion-button (click)="toggleEdit()">
+        {{edit? 'Save' : 'Edit'}}
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+
+  <p text-center>Crazy Beach (Mamaia)</p>
+
+  <ion-list>
+    <ion-card>
+      <ion-row *ngFor="let item of items" [class.shown]="edit">
+
+        <ion-col col-1 class="card-remove">
+          <ion-icon name="remove-circle" color="danger"></ion-icon>
+        </ion-col>
+
+        <ion-col col-4 class="card-left">
+          <img [src]="item.img"/>
+        </ion-col>
+
+        <ion-col class="card-right">
+          <h4 class="title">{{item.title}}</h4>
+          <ion-item class="quantity">
+            <ion-label>Qty: {{item.quantity}}</ion-label>
+            <!-- TODO: implement custom number picker -->
+          </ion-item>
+          <div class="price">
+            <span class="price-item">
+              Unit Price: <b>{{item.price}} RON</b>
+            </span>
+            <span class="price-item">
+              Total Price: <b>{{item.price*item.quantity}} RON</b>
+            </span>
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-card>
+  </ion-list>
 
 </ion-content>
+
+<ion-footer>
+  <div class="total">
+    Total: <b>{{totalPrice}} RON</b>
+  </div>
+  <ion-row>
+    <ion-col>
+      <button ion-button outline round block small>Add product</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button pink-gradient round block small>Send</button>
+    </ion-col>
+  </ion-row>
+</ion-footer>
