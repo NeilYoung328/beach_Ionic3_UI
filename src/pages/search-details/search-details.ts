@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import { IonicPage, NavController, NavParams } from 'ionic-angular'
+import { SearchResultsPage } from '../search-results/search-results'
 
 /**
  * Generated class for the SearchDetailsPage page.
@@ -14,13 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular'
   templateUrl: 'search-details.html',
 })
 export class SearchDetailsPage {
-  public country: string = 'Romania'
-  public place: string = 'Mamaia'
-  public persons = Array.from(new Array(8), (val,index) => index+1)
-  public types = ['Umbrella', 'Baldaquin', 'Sunbed', 'Pool']
-  public zones = ['Near Sea', 'Middle', 'At the Back']
+  country: string = 'Romania'
+  place: string = 'Mamaia'
+  persons = Array.from(new Array(8), (val,index) => index+1)
+  types = ['Umbrella', 'Baldaquin', 'Sunbed', 'Pool']
+  zones = ['Near Sea', 'Middle', 'At the Back']
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  next() {
+    this.navCtrl.push(SearchResultsPage)
   }
 
 }
