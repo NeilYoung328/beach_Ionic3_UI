@@ -166,6 +166,8 @@ ion-popover {
 
 }
 
+// Graphic and icons
+
 .or {
   height: 3rem;
   width: 100%;
@@ -175,4 +177,108 @@ ion-popover {
   background-size: contain;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.icon[name=place-sunbed] {
+  background-image: url('../assets/imgs/place-icons/sunbed.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon[name=place-umbrella] {
+  background-image: url('../assets/imgs/place-icons/umbrella.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon[name=place-baldaquin] {
+  background-image: url('../assets/imgs/place-icons/baldaquin.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon[name=option-cash],
+.icon.ion-md-option-cash,
+.icon.ion-ios-option-cash {
+  background-image: url('../assets/imgs/option-icons/cash.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.icon[name=option-credit],
+.icon.ion-md-option-credit,
+.icon.ion-ios-option-credit {
+  background-image: url('../assets/imgs/option-icons/credit.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.icon[name=option-tea],
+.icon.ion-md-option-tea,
+.icon.ion-ios-option-tea {
+  background-image: url('../assets/imgs/option-icons/tea.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.icon[name=option-food],
+.icon.ion-md-option-food,
+.icon.ion-ios-option-food {
+  background-image: url('../assets/imgs/option-icons/food.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.icon[name=option-shower],
+.icon.ion-md-option-shower,
+.icon.ion-ios-option-shower {
+  background-image: url('../assets/imgs/option-icons/shower.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.icon[name=option-wifi],
+.icon.ion-md-option-wifi,
+.icon.ion-ios-option-wifi {
+  background-image: url('../assets/imgs/option-icons/wifi.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.icon[name=option-computer],
+.icon.ion-md-option-computer,
+.icon.ion-ios-option-computer {
+  background-image: url('../assets/imgs/option-icons/computer.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.6rem;
+  width: 1.6rem;
 }
