@@ -1,3 +1,84 @@
 page-search-results {
+  .content {
+    background-color: #fafafa;
+  }
+
+  .scroll-content {
+    padding-top: 0 !important;
+  }
+
+  .card {
+    padding: 10px;
+    background-color: #fff;
+
+    .card-left {
+
+      .reviews {
+        font-size: 1.2rem;
+        color: #ccc;
+        margin-bottom: 0;
+        margin-top: 4px;
+      }
+
+      .star-rating {
+        display: flex;
+        justify-content: center;
+
+        .icon {
+          font-size: 1em;
+          color: color($colors, light);
+
+          &.full {
+            color: color($colors, primary);
+          }
+        }
+      }
+    }
+
+    .card-right {
+
+      .title {
+        line-height: 1rem;
+        font-weight: bold;
+      }
+
+      .seats {
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .available {
+        padding: 0;
+        font-size: 1.6rem;
+
+        .item-inner {
+          padding: 0;
+        }
+
+        .place {
+          color: color($colors, primary);
+          margin-left: 8px;
+          margin-right: 0;
+          line-height: 2rem;
+          vertical-align: middle;
+
+          .icon {
+            color: color($colors, light);
+            vertical-align: middle;
+          }
+        }
+      }
+
+      .options {
+        vertical-align: bottom;
+        display: flex;
+        justify-content: right;
+
+        .icon {
+          margin-left: 0.4rem;
+        }
+      }
+    }
+  }
 
 }

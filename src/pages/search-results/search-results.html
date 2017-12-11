@@ -1,18 +1,60 @@
-<!--
-  Generated template for the SearchResultsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+<ion-header class="has-shadow">
 
   <ion-navbar>
-    <ion-title>SearchResults</ion-title>
+    <ion-title>{{country}}, {{place}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+
+  <p text-center>{{beaches.length}} Beaches</p>
+
+  <ion-card *ngFor="let beach of beaches">
+    <ion-row>
+
+      <ion-col col-3 class="card-left">
+
+        <img alt="" src="{{beach.img}}"/>
+        <p text-center class="reviews">({{beach.reviews}})</p>
+
+        <div class="star-rating">
+          <ion-icon name="star" [class.full]="beach.rating>=1"></ion-icon>
+          <ion-icon name="star" [class.full]="beach.rating>=2"></ion-icon>
+          <ion-icon name="star" [class.full]="beach.rating>=3"></ion-icon>
+          <ion-icon name="star" [class.full]="beach.rating>=4"></ion-icon>
+          <ion-icon name="star" [class.full]="beach.rating>=5"></ion-icon>
+        </div>
+
+      </ion-col>
+
+      <ion-col col-9 class="card-right">
+        <h4 class="title">{{beach.title}}</h4>
+        <p class="seats">{{beach.seats}} Seats</p>
+
+        <ion-item class="available">
+          Available:
+          <span class="place" item-end>
+            {{beach.sunbed}}
+            <ion-icon name="place-sunbed"></ion-icon>
+          </span>
+          <span class="place" item-end>
+            {{beach.umbrella}}
+            <ion-icon name="place-umbrella"></ion-icon>
+          </span>
+          <span class="place" item-end>
+            {{beach.baldaquin}}
+            <ion-icon name="place-baldaquin"></ion-icon>
+          </span>
+        </ion-item>
+
+        <div class="options">
+          <ion-icon *ngFor="let option of beach.options" name="option-{{option}}"></ion-icon>
+        </div>
+      </ion-col>
+
+    </ion-row>
+  </ion-card>
 
 </ion-content>
