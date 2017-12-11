@@ -115,6 +115,14 @@ ion-list {
   margin-bottom: 0 !important;
 }
 
+*[no-top-padding] {
+  padding-top: 0 !important;
+}
+
+*[no-bottom-padding] {
+  padding-bottom: 0 !important;
+}
+
 ion-app.ios {
   ion-fab[top]{
     top: 25px;
@@ -154,8 +162,12 @@ h1 {
   border: none!important;
 }
 
-.header-md::after {
+.header-md:not(.has-shadow)::after {
   background-image: none;
+}
+
+.header-ios.has-shadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)
 }
 
 ion-popover {
