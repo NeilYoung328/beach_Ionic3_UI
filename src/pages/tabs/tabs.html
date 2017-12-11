@@ -1,7 +1,44 @@
-<ion-tabs>
+<ion-tabs [class.menu-shown]="isMenuShown">
   <ion-tab [root]="tab1Root" tabIcon="search"></ion-tab>
   <ion-tab [root]="tab2Root" tabIcon="cart"></ion-tab>
   <ion-tab [root]="tab3Root" tabIcon="bulb" enabled="false"></ion-tab>
   <ion-tab [root]="tab4Root" tabIcon="person" enabled="false"></ion-tab>
-  <ion-tab [root]="tab5Root" tabIcon="menu" enabled="false"></ion-tab>
+  <ion-tab [tabIcon]="isMenuShown ? 'close' : 'menu'" (ionSelect)="toggleMenu()"></ion-tab>
+  <ion-toolbar class="menu">
+    <ion-buttons>
+      <button ion-button>
+        <div>
+          <div class="icon-div">
+            <ion-icon name="settings" large></ion-icon>
+          </div>
+          Settings
+        </div>
+      </button>
+      <button ion-button>
+        <div>
+          <div class="icon-div">
+            <ion-icon name="share-alt"></ion-icon>
+          </div>
+          Give Reservation
+        </div>
+      </button>
+      <button ion-button>
+        <div>
+          <div class="icon-div">
+            <ion-icon name="share"></ion-icon>
+          </div>
+          Share App
+        </div>
+      </button>
+      <button ion-button>
+        <div>
+          <div class="icon-div">
+            <ion-icon name="chatbubbles"></ion-icon>
+          </div>
+          Chat Online
+        </div>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div id="mask" (click)="toggleMenu()"></div>
 </ion-tabs>
