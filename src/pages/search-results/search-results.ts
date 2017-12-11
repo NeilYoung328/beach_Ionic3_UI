@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BeachPage } from '../beach/beach'
 //TODO: Add filter popover
 
 @IonicPage()
@@ -80,6 +81,10 @@ export class SearchResultsPage {
   ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  next() {
+    this.navCtrl.push(BeachPage)
   }
 
 }

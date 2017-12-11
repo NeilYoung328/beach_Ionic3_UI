@@ -11,12 +11,12 @@
 
   <p text-center>{{beaches.length}} Beaches</p>
 
-  <ion-card *ngFor="let beach of beaches">
+  <ion-card *ngFor="let beach of beaches" (click)="next()">
     <ion-row>
 
       <ion-col col-3 class="card-left">
 
-        <img alt="" src="{{beach.img}}"/>
+        <img alt="" [src]="beach.img"/>
         <p text-center class="reviews">({{beach.reviews}})</p>
 
         <div class="star-rating">
