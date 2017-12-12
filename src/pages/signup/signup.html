@@ -1,0 +1,40 @@
+<ion-content [style.background-position]="'0 ' + shouldTop">
+
+  <ion-fab top right>
+    <button ion-fab mini id="language" lang="{{currentLanguage}}" (click)="showLanguageMenu()"></button>
+  </ion-fab>
+
+  <h1 text-center margined>Smart Beach</h1>
+
+  <div margined>
+
+    <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input type="text" placeholder="Viktor"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Email address</ion-label>
+      <ion-input type="email" placeholder="user@user.com"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Phone number</ion-label>
+      <ion-input type="tel" placeholder="+(40)722 222 222"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password" placeholder="*******"></ion-input>
+    </ion-item>
+
+    <button ion-button round full pink-gradient class="signup-button" (click)="doSignup()">Register</button>
+
+  </div>
+
+  <div class="bottom-block">
+    <a>Already have an account?</a>
+    <button ion-button clear (click)="goLogin()">Log in</button>
+  </div>
+
+</ion-content>

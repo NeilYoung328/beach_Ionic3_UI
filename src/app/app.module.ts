@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular'
 import { MyApp } from './app.component'
 
 import { LoginPage } from '../pages/login/login'
+import { SignupPage } from '../pages/signup/signup'
 import { TabsPage } from '../pages/tabs/tabs'
 import { SearchPage } from '../pages/search/search'
 import { CalendarPopoverPage } from '../pages/search/calendar-popover/calendar-popover'
@@ -22,6 +23,7 @@ import { CalendarModule } from 'ion2-calendar'
   declarations: [
     MyApp,
     LoginPage,
+    SignupPage,
     TabsPage,
     SearchPage,
     CalendarPopoverPage,
@@ -39,6 +41,7 @@ import { CalendarModule } from 'ion2-calendar'
   entryComponents: [
     MyApp,
     LoginPage,
+    SignupPage,
     TabsPage,
     SearchPage,
     CalendarPopoverPage,
