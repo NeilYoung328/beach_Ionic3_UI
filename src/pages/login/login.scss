@@ -1,27 +1,51 @@
 page-login {
 
   ion-content {
-
     background-image: url('../assets/imgs/login-page-background.png');
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+  }
 
-    h1[margined] {
-      margin-top: 6rem!important;
-      margin-bottom: 6rem!important;
-    }
+  h1[margined] {
+    margin-top: 6rem!important;
+    margin-bottom: 6rem!important;
+  }
 
-    #language {
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-    #language[lang="en"] {
+  #language {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &[lang="en"] {
       background-image: url('../assets/imgs/lang/en.png');
     }
+  }
 
+  .login-button {
+    margin-top: 6rem;
+  }
+
+  .bottom-block {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+    vertical-align: middle;
+
+    .button {
+      height: 3rem;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
   }
 
 }

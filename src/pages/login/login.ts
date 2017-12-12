@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
+import { Component } from '@angular/core'
+import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular'
+import { SignupPage } from '../signup/signup'
+import { TabsPage } from '../tabs/tabs'
 
 @IonicPage()
 @Component({
@@ -18,13 +19,15 @@ export class LoginPage {
 
   //TODO: Implement auth
   doLogin() {
-    console.log('doLogin() TODO')
     this.navCtrl.push(TabsPage)
+  }
+
+  goSignup() {
+    this.navCtrl.push(SignupPage)
   }
 
   //TODO: Implement Language menu
   showLanguageMenu() {
-    console.log('showLanguageMenu() TODO')
   }
 
 }
