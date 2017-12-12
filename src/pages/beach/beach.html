@@ -4,9 +4,28 @@
     <ion-title>Beach</ion-title>
   </ion-navbar>
 
+  <ion-toolbar no-padding>
+    <ion-segment [(ngModel)]="beachSection">
+      <ion-segment-button value="overview">
+        Beach
+      </ion-segment-button>
+      <ion-segment-button value="menu">
+        Menu
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
 </ion-header>
 
 
-<ion-content padding>
+<ion-content [ngSwitch]="beachSection">
+
+  <div *ngSwitchCase="'overview'" class="beach-overview">
+    Overview
+  </div>
+
+  <div *ngSwitchCase="'menu'" class="beach-menu">
+    Menu
+  </div>
 
 </ion-content>

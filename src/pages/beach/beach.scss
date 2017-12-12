@@ -1,3 +1,15 @@
 page-beach {
 
+  .toolbar {
+    margin-top: auto;
+  }
+
+  .beach-overview {
+    height: 100%;
+
+    background-image: url('../assets/imgs/beach-page-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 }
