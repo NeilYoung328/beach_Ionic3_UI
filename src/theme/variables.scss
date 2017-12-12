@@ -33,6 +33,13 @@ $font-path: "../assets/fonts";
   src: url($font-path + "/ProximaNova_Extrabold.otf") format("opentype");
 };
 
+@font-face {
+  font-family: "Honeymoon";
+  font-style: normal;
+  font-weight: 400;
+  src: url($font-path + "/Honeymoon.ttf") format("truetype");
+}
+
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -99,6 +106,8 @@ $tabs-ios-tab-min-height: 6rem;
 $popover-ios-width: 300px;
 $popover-ios-border-radius: 10px;
 
+$toolbar-ios-height: 42px;
+
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
@@ -120,6 +129,8 @@ $tabs-md-tab-icon-size: 3rem;
 
 $popover-md-width: 300px;
 $popover-md-border-radius: 10px;
+
+$toolbar-md-height: 42px;
 
 // App Windows Variables
 // --------------------------------------------------
