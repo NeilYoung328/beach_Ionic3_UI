@@ -9,19 +9,29 @@
 
 <ion-content padding>
 
+  <div id="type-block">
+    <h3>Seat type</h3>
+    <ion-list no-lines ion-row class="vertical-buttons">
+      <ion-item ion-col col-4 *ngFor="let type of types">
+        <button ion-button round block color="light" value="{{type}}">{{type}}</button>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div id="zone-block">
+    <h3>Zone</h3>
+    <ion-list no-lines ion-row class="vertical-buttons">
+      <ion-item ion-col col-4 *ngFor="let zone of zones">
+        <button ion-button round block color="light" value="{{zone}}">{{zone}}</button>
+      </ion-item>
+    </ion-list>
+  </div>
+
   <div id="persons-block">
     <h3>How many persons?</h3>
     <ion-list no-lines ion-row class="vertical-buttons">
       <ion-item ion-col *ngFor="let person of persons">
         <button ion-button block color="light" value="{{person}}">{{person}}</button>
-      </ion-item>
-    </ion-list>
-  </div>
-
-  <div id="type-block">
-    <ion-list no-lines ion-row class="vertical-buttons">
-      <ion-item ion-col col-4 *ngFor="let type of types">
-        <button ion-button round block color="light" value="{{type}}">{{type}}</button>
       </ion-item>
     </ion-list>
   </div>
@@ -40,15 +50,6 @@
           <ion-icon name="check"></ion-icon>
           No
         </button>
-      </ion-item>
-    </ion-list>
-  </div>
-
-  <div id="zone-block">
-    <h3>Zone</h3>
-    <ion-list no-lines ion-row class="vertical-buttons">
-      <ion-item ion-col col-4 *ngFor="let zone of zones">
-        <button ion-button round block color="light" value="{{zone}}">{{zone}}</button>
       </ion-item>
     </ion-list>
   </div>

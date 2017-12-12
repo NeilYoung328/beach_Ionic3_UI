@@ -11,7 +11,7 @@ export class SearchDetailsPage {
   country: string = 'Romania'
   place: string = 'Mamaia'
   persons = Array.from(new Array(8), (val,index) => index+1)
-  types = ['Umbrella', 'Baldaquin', 'Sunbed', 'Pool']
+  types = ['Umbrella', 'Baldaquin', 'Sunbed']
   zones = ['Near Sea', 'Middle', 'At the Back']
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
