@@ -1,15 +1,41 @@
 page-beach {
 
-  .toolbar {
-    margin-top: auto;
+  .toolbar.segments-toolbar {
+    min-height: 4.2rem;
   }
 
   .beach-overview {
     height: 100%;
-
     background-image: url('../assets/imgs/beach-page-background.png');
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .beach-menu {
+    height: 100%;
+    background-color: #fafafa;
+
+    .card {
+      padding: 1.5rem;
+      background-color: #fff;
+      transition: max-height 1s ease-in-out;
+      max-height: 5rem;
+
+      &.itemsShown {
+        max-height: 20rem;
+      }
+
+      .category {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+
+        .category-name {
+          vertical-align: middle;
+          line-height: 2rem;
+        }
+      }
+    }
   }
 
 }

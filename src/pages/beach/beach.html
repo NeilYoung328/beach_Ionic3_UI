@@ -1,10 +1,10 @@
-<ion-header>
+<ion-header class="has-shadow">
 
   <ion-navbar>
     <ion-title>Beach</ion-title>
   </ion-navbar>
 
-  <ion-toolbar no-padding>
+  <ion-toolbar no-padding class="segments-toolbar">
     <ion-segment [(ngModel)]="beachSection">
       <ion-segment-button value="overview">
         Beach
@@ -21,11 +21,18 @@
 <ion-content [ngSwitch]="beachSection">
 
   <div *ngSwitchCase="'overview'" class="beach-overview">
-    Overview
   </div>
 
   <div *ngSwitchCase="'menu'" class="beach-menu">
-    Menu
+    <ion-card *ngFor="let item of menu" [class.itemsShown]="item.itemsShown">
+      <ion-row class="category" (click)="toggleItems(item)">
+        <span ion-text text-capitalize color="primary" class="category-name">{{item.category}}</span>
+        <ion-icon color="primary" [name]="item.itemsShown ? 'ios-arrow-up' : 'ios-arrow-down'"></ion-icon>
+      </ion-row>
+      <div *ngIf="item.itemsShown">
+        ITEMS
+      </div>
+    </ion-card>
   </div>
 
 </ion-content>
