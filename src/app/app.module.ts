@@ -17,6 +17,8 @@ import { CartPage } from '../pages/cart/cart'
 import { StatusBar } from '@ionic-native/status-bar'
 import { SplashScreen } from '@ionic-native/splash-screen'
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
 import { CalendarModule } from 'ion2-calendar'
 
 @NgModule({
@@ -35,6 +37,7 @@ import { CalendarModule } from 'ion2-calendar'
   imports: [
     BrowserModule,
     CalendarModule,
+    BrowserAnimationsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
