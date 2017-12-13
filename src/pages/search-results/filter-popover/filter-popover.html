@@ -1,0 +1,46 @@
+<ion-toolbar>
+  <ion-navbar>
+    <ion-title>
+      <button ion-button clear class="clear-button">
+        Deselect All
+      </button>
+    </ion-title>
+  </ion-navbar>
+</ion-toolbar>
+
+<div padding>
+
+  <h3>Filter By</h3>
+  <div class="buttons">
+    <button ion-button clear *ngFor="let option of options">
+      <div text-capitalize>
+        <div class="icon-div">
+          <ion-icon name="option-{{option.name}}" large></ion-icon>
+        </div>
+        {{option.fullName}}
+      </div>
+    </button>
+  </div>
+
+  <h3>Sort By</h3>
+  <div class="buttons">
+    <button ion-button clear>
+      <div text-capitalize>
+        <div class="icon-div">
+          <ion-icon name="pin" large></ion-icon>
+        </div>
+        Distance
+      </div>
+    </button>
+    <button ion-button clear>
+      <div text-capitalize>
+        <div class="icon-div">
+          <ion-icon name="star" large></ion-icon>
+        </div>
+        Rating
+      </div>
+    </button>
+  </div>
+</div>
+
+<button ion-button full pink-gradient class="bottom-button" (click)="doClose()">See results</button>
