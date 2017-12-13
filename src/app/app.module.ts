@@ -10,6 +10,7 @@ import { SearchPage } from '../pages/search/search'
 import { CalendarPopoverPage } from '../pages/search/calendar-popover/calendar-popover'
 import { SearchDetailsPage } from '../pages/search-details/search-details'
 import { SearchResultsPage } from '../pages/search-results/search-results'
+import { FilterPopoverPage } from '../pages/search-results/filter-popover/filter-popover'
 import { BeachPage } from '../pages/beach/beach'
 
 import { CartPage } from '../pages/cart/cart'
@@ -31,6 +32,7 @@ import { CalendarModule } from 'ion2-calendar'
     CalendarPopoverPage,
     SearchDetailsPage,
     SearchResultsPage,
+    FilterPopoverPage,
     BeachPage,
     CartPage,
   ],
@@ -50,6 +52,7 @@ import { CalendarModule } from 'ion2-calendar'
     CalendarPopoverPage,
     SearchDetailsPage,
     SearchResultsPage,
+    FilterPopoverPage,
     BeachPage,
     CartPage,
   ],

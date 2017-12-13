@@ -1,7 +1,15 @@
 <ion-header class="has-shadow">
 
   <ion-navbar>
+
     <ion-title>{{country}}, {{place}}</ion-title>
+
+    <ion-buttons right>
+      <button ion-button icon-only (click)="showFilter()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
 
 </ion-header>

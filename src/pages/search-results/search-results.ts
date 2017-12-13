@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, PopoverController, NavParams } from 'ionic-angular';
+
+import { FilterPopoverPage } from './filter-popover/filter-popover'
 import { BeachPage } from '../beach/beach'
-//TODO: Add filter popover
 
 @IonicPage()
 @Component({
@@ -80,7 +81,17 @@ export class SearchResultsPage {
     },
   ]
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public popoverCtrl: PopoverController,
+  ) { }
+
+  showFilter() {
+    let popover = this.popoverCtrl.create(FilterPopoverPage)
+    popover.present()
+    popover.onDidDismiss(() => {
+    })
   }
 
   next() {

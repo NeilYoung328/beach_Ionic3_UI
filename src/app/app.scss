@@ -19,6 +19,16 @@
   background: linear-gradient(to right, #fe5295, #f86d67);
 }
 
+.segment-md .segment-button {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  color: color($colors, light);
+
+  &.segment-activated {
+    color: color($colors, primary);
+  }
+}
+
 .button[check] {
 
   color: #000;
@@ -128,7 +138,8 @@ ion-app.ios {
 }
 
 ion-app.md {
-  .button {
+  .button,
+  .fab {
     box-shadow: none;
     -webkit-box-shadow: none;
   }
@@ -214,6 +225,17 @@ ion-popover {
   background-size: contain;
   height: 2rem;
   width: 2rem;
+}
+
+.icon[name=option-baldaquin],
+.icon.ion-md-option-baldaquin,
+.icon.ion-ios-option-baldaquin {
+  background-image: url('../assets/imgs/place-icons/baldaquin.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.6rem;
+  width: 1.6rem;
 }
 
 .icon[name=option-cash],
